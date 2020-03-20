@@ -1,5 +1,5 @@
 /**
- * @author Jaime Rabasco Ronda
+ * @author Andrea
  */
 /*RefactorizaciÃ³n
 Extrae una superclase VehÃ­culo con los campos
@@ -10,10 +10,23 @@ y los mÃ©todos
 	getNum_serie(), setNum_serie()
 	getFabricante(), setFabricante()
 	getColor(), setColor()*/
+
+/**
+ * 
+ * @author Andrea
+ * Tenemos que color puede ser rojo, azul, verde, amarillo o naranja
+ *
+ */
 enum Color {
 	ROJO, AZUL, VERDE, AMARILLO, NARANJA
 };
 
+/**
+ * 
+ * @author Andrea
+ * En coche tenemos una superclase extendida y es Vehículo
+ *
+ */
 public class Coche extends Vehículo {
 	private int cilindrada;
 	protected Coche(int num_serie, int cilindrada, String fabricante, Color color) {
@@ -23,11 +36,18 @@ public class Coche extends Vehículo {
 		this.color = color;
 	}
 
+	/**
+	 * @author Andrea
+	 * @return si es cilindrada o no
+	 */
 	public int getCilindrada() {
 		return cilindrada;
 	}
 
-
+/**
+ * @author Andrea
+ * @param cilindrada
+ */
 	public void setCilindrada(int cilindrada) {
 		this.cilindrada = cilindrada;
 	}
