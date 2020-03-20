@@ -6,7 +6,8 @@ public class Perro {
 	}
 
 	void ladrar() {
-		System.out.println("Guau");
+		String ladrar = "Guau";
+		System.out.println(ladrar);
 	}
 
 }
